@@ -1,0 +1,185 @@
+/*Our stylesheet */
+ body
+{
+	background-color:#efeded;
+}
+
+#container
+{
+	margin:auto;
+	margin-top:100px;
+	padding:10px;
+	border: ;
+	border-radius:10px;
+	height:350px;
+	width:300px;
+	background-color:#84a1a2;
+	background: linear-gradient(#84a1a2,#68838b);
+	box-shadow: 0px 4px #36454f, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#screen
+{
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.display
+{
+	width:90%;
+	height:50px;
+	margin:20px auto auto 14px;
+	border:1px #cd3333 solid;/*orange*/
+	border-radius:10px;
+	background-color:#efeded;
+	font:20px Tahoma;
+	text-align:right;
+	color:#104e8b;
+
+}
+
+#calcBody
+{
+	height:200px;
+	padding-top:5px;
+}
+
+table
+{
+	width:90%;
+	height:100%;
+	padding:5px;
+	margin:auto
+}
+
+.keys
+{
+	border:#c1cdc1 1px solid;
+	border-radius:5px;
+	width:40px;
+	height:30px;
+	font: 15px Tahoma;
+	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); 
+	background: linear-gradient(#eeeeee,#cccccc);
+	box-shadow: 0px 4px #838b8b, 0px 10px 15px rgba(0, 0, 0, 0.2);
+		/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+
+}
+
+.operator1
+{
+	border:#cd3333 1px solid;
+	border-radius:5px;
+	width:45px;
+	height:30px;
+	margin-left:20px;
+	color:white;
+	font: 15px Tahoma;
+	background: linear-gradient(#ff4040,#cd3333);
+	box-shadow: 0px 4px #8b2323, 0px 10px 15px rgba(0, 0, 0, 0.2);
+		/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+}
+
+.operator2
+{
+	border-radius:5px;
+	background: linear-gradient(#536872,#68838b);
+	width:45px;
+	height:30px;
+	color:white;
+	font: 15px Tahoma;
+	box-shadow: 0px 4px #36454f, 0px 10px 15px rgba(0, 0, 0, 0.2);
+		/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+}
+
+#eval
+{
+	background: linear-gradient(#ff4040,#cd3333);
+	box-shadow: 0px 4px #8b2323, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	color:white;
+	border:#cd3333 1px solid;
+		/* prevent selection of text inside keys */
+	user-select: none;
+	
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+}
+
+/*Hover effects on buttons*/
+.keys:hover {
+	background: #b4cdcd;
+	box-shadow: 0px 4px #7a8b8b;
+	color: white;
+}
+
+.operator1:hover
+{
+	background: #cd4f39;
+	box-shadow: 0px 4px #8b3626;
+	color: white;
+}
+
+.operator2:hover
+{
+	background: #b4cdcd;
+	box-shadow: 0px 4px #7a8b8b;
+	color: white;
+}
+
+#eval:hover
+{
+	background: #cd4f39;
+	box-shadow: 0px 4px #8b3626;
+	color: white;
+}
+
+/*to simulate press.. like a button does*/
+.keys:active {
+	box-shadow: 0px 0px #7a8b8b;
+	top:8px;
+}
+
+.operator1:active {
+	box-shadow: 0px 0px #8b3626;
+	top:8px;
+}
+
+.operator2:active {
+	box-shadow: 0px 0px #7a8b8b;
+	top:8px;
+}
+
+#eval:active {
+	box-shadow: 0px 0px #8b3626;
+	top:8px;
+}
+
+/*to remove outline */
+.keys:focus {
+	
+	outline:0;
+}
+.operator1:focus {
+	
+	outline:0;
+}
+.operator2:focus {
+	
+	outline:0;
+}
+#eval:focus {
+	
+	outline:0;
+}
