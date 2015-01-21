@@ -1,7 +1,8 @@
 /*Our stylesheet */
  body
 {
-	background-color:#fff0f5;
+	background-color:#fafafa;
+	background:linear-gradient(to right, #fafafa,#ebebeb)
 }
 
 #container
@@ -14,8 +15,10 @@
 	height:350px;
 	width:300px;
 	background-color:#84a1a2;
-	background: linear-gradient(#84a1a2,#68838b);
-	box-shadow: 0px 4px #36454f, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	/*background: linear-gradient(#84a1a2,#68838b);*/
+	-moz-box-shadow:inset 0 0 10px #000000;
+   	-webkit-box-shadow:inset 0 0 5px #000000;
+   	box-shadow:inset 0 0 15px #000000;
 }
 
 #screen
@@ -40,8 +43,9 @@
 
 #calcBody
 {
-	height:200px;
+	height:230px;
 	padding-top:5px;
+	box-shadow: 0px 4px #36454f, 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 table
@@ -61,13 +65,17 @@ table
 	font: 15px Tahoma;
 	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); 
 	background: linear-gradient(#eeeeee,#cccccc);
-	box-shadow: 0px 4px #838b8b, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 6px #838b8b, 0px 10px 15px rgba(0, 0, 0, 0.2);
 		/* prevent selection of text inside keys */
 	user-select: none;
 	
 	/* Smoothing out hover and active states using css3 transitions */
 	transition: all 0.2s ease;
+}
 
+#sqrt
+{
+	width: 130px;
 }
 
 .operator1
@@ -80,7 +88,7 @@ table
 	color:white;
 	font: 15px Tahoma;
 	background: linear-gradient(#ff4040,#cd3333);
-	box-shadow: 0px 4px #8b2323, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 6px #8b2323, 0px 10px 15px rgba(0, 0, 0, 0.2);
 		/* prevent selection of text inside keys */
 	user-select: none;
 	
@@ -96,7 +104,7 @@ table
 	height:30px;
 	color:white;
 	font: 15px Tahoma;
-	box-shadow: 0px 4px #36454f, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 6px #36454f, 0px 10px 15px rgba(0, 0, 0, 0.2);
 		/* prevent selection of text inside keys */
 	user-select: none;
 	
@@ -104,12 +112,14 @@ table
 	transition: all 0.2s ease;
 }
 
+/*equal to*/
 #eval
 {
 	background: linear-gradient(#ff4040,#cd3333);
-	box-shadow: 0px 4px #8b2323, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 6px #8b2323, 0px 10px 15px rgba(0, 0, 0, 0.2);
 	color:white;
 	border:#cd3333 1px solid;
+	width:95px;
 		/* prevent selection of text inside keys */
 	user-select: none;
 	
@@ -120,28 +130,28 @@ table
 /*Hover effects on buttons*/
 .keys:hover {
 	background: #b4cdcd;
-	box-shadow: 0px 4px #7a8b8b;
+	box-shadow: 0px 6px #7a8b8b;
 	color: white;
 }
 
 .operator1:hover
 {
 	background: #cd4f39;
-	box-shadow: 0px 4px #8b3626;
+	box-shadow: 0px 6px #b22222;
 	color: white;
 }
 
 .operator2:hover
 {
 	background: #b4cdcd;
-	box-shadow: 0px 4px #7a8b8b;
+	box-shadow: 0px 6px #7a8b8b;
 	color: white;
 }
 
 #eval:hover
 {
 	background: #cd4f39;
-	box-shadow: 0px 4px #8b3626;
+	box-shadow: 0px 6px #b22222;
 	color: white;
 }
 
@@ -152,7 +162,7 @@ table
 }
 
 .operator1:active {
-	box-shadow: 0px 0px #8b3626;
+	box-shadow: 0px 0px #b22222;
 	top:8px;
 }
 
@@ -162,7 +172,7 @@ table
 }
 
 #eval:active {
-	box-shadow: 0px 0px #8b3626;
+	box-shadow: 0px 0px #b22222;
 	top:8px;
 }
 
