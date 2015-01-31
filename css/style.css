@@ -125,7 +125,7 @@ table
 	user-select: none;
 	
 	/* Smoothing out hover and active states using css3 transitions */
-	transition: all 0.2s ease;
+	transition: all 1s ease;
 }
 
 /*Hover effects on buttons*/
@@ -193,4 +193,11 @@ table
 #eval:focus {
 	
 	outline:0;
+}
+#copyRight
+{
+	font-size:15px;
+	font-family:Tahoma;
+	color:white;
+
 }
